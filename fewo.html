@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ferienwohnung an der Ostsee</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+    }
+    nav {
+      background: #005fa3;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .hero {
+      background: #cce7ff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    section {
+      margin-top: 3rem;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 4rem;
+      background: #eee;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ferienwohnung an der Ostsee</h1>
+</header>
+
+<nav>
+  <a href="#bilder">Bilder</a>
+  <a href="#belegung">Belegung</a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="#ausstattung">Ausstattung</a>
+</nav>
+
+<main>
+
+  <section id="bilder" class="hero">
+    <h2>Willkommen in Ihrer Ferienwohnung an der Ostsee!</h2>
+    <p>Genießen Sie erholsame Tage in unserer modernen und gemütlichen Ferienwohnung direkt am Meer.</p>
+    <img src="Bild1.jpg" alt="Ferienwohnung an der Ostsee" />
+    <img src="Bild2.jpg" alt="Ferienwohnung an der Ostsee" />
+  </section>
+
+  <section id="belegung">
+    <h2>Belegungskalender</h2>
+    <p>Bei den Preisen handelt es sich um den "vollen" Preis also ohne weitere Gebühr. Bei längeren Mietzeiträumen ist ein Rabatt bzw. Gesamtpreis nach Rücksprache möglich. Hier sehen Sie die aktuelle Belegung der Ferienwohnung:</p>
+
+    <!-- GOOGLE KALENDER EINBINDUNG -->
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=07cac20d19de47e616cf6e646c81e5cef8b35ae5b03e4607559eac05d754fd35%40group.calendar.google.com&ctz=Europe%2FBerlin"
+      style="border: 0" 
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+
+    <p>Wenn Ihr Wunschzeitraum frei ist, senden Sie uns gerne eine Anfrage über das Kontaktformular oder schicken Sie einfach eine EMail an FeWo-Dassow@GMX.net</a></p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontaktformular</h2>
+    <form action="mailto:FeWo-Dassow@gmx.de" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required />
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="E-Mail" required />
+
+      <label for="nachricht">Nachricht:</label>
+      <textarea id="nachricht" name="Nachricht" rows="4" required></textarea>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </section>
+
+<section id="ausstattung" class="hero">
+    <h2>Ausstattung und Hinweise</h2>
+    <p>
+<strong>Hinweise: Maximal durchgängige Buchungsdauer 30 Tage! Check-in ab 14 Uhr ggf. nach Rücksprache früher, falls am selben Tag keine Gäste. Check-out bis 12 Uhr. Haustiere sind erlaubt.</strong>
+</p>
+
+<h3>Ausstattung:</h3>
+<ul>
+   <ul>
+<li>Föhn</li>
+<li>Waschmaschine</li>
+<li>Küche mit Küchenutensilien</li>
+<li>Dusche / WC</li>
+<li>Balkon</li>
+<li>TV</li>
+<li>WiFi / WLAN</li>
+<li>2 Fahrräder</li>
+<li></li>
+<li></li>
+
+
+  </section>
+
+
+</main>
+
+<footer>
+  &copy; FeWo-Dassow@GMX.de +++ 2025 Ferienwohnung an der Ostsee – Alle Rechte vorbehalten +++
+</footer>
+
+</body>
+</html>
